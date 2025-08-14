@@ -32,7 +32,7 @@ git commit -m "Ejercicios capítulos 4-6 de Piensa en Java"
 
 
 
-Integra periódicamente a main:
+* Integra periódicamente a main:
 
 git checkout main
 
@@ -40,6 +40,30 @@ git merge java-core --no-ff  # Fusiona manteniendo historia
 
 
 
-Usa tags para hitos importantes:
+* Usa tags para hitos importantes:
 
 git tag -a v0.1-java-basico -m "Completados conceptos básicos de Java" 
+
+## Cuándo Hacer Commit
+* Haz commit cuando:
+
+Completes un ejercicio lógico (ej: un capítulo de "Piensa en Java").
+
+Termines una funcionalidad pequeña (ej: implementar el patrón Singleton).
+
+Corrijas un bug importante.
+
+Ejemplo:
+git checkout java-core
+### Edita archivos en backend/src/main/java/com/aprendizaje/core/
+* git add . 
+* git commit -m "Ejercicios capítulos 4-6: Herencia e interfaces"
+
+## *Ramas creadas*
+
+* java-core
+* java-estructuras
+* java-patrones
+* java-app
+* data-science
+* docs-metas
