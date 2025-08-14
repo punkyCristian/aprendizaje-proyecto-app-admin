@@ -59,6 +59,26 @@ git checkout java-core
 * git add . 
 * git commit -m "Ejercicios capítulos 4-6: Herencia e interfaces"
 
+## Cuándo Hacer git push
+### Haz push cuando:
+
+* Quieras respaldar tu trabajo en GitHub.
+
+* Termines una sesión de estudio/codificación.
+
+* Necesites compartir el avance con otros (si colaboras).
+
+### Primer push en una rama nueva:
+
+* git checkout java-core
+* git push -u origin java-core  # El flag -u vincula la rama local con la remota
+Nota: Solo necesitas usar -u la primera vez. Luego, usa solo git push.
+
+### Push en ramas existentes:
+
+* git checkout java-core
+* git push  # Envía los commits al repositorio remoto
+
 ## *Ramas creadas*
 
 * java-core
