@@ -14,4 +14,17 @@ describe("banco", () => {
 
     expect(numeroDeCuenta.length).toBe(10);
   });
+
+  test("creacion de cuenta crea cuenta con saldo 0", () => {
+    const banco = new Banco();
+
+    const titularDeLaCuenta: string = "Juan Perez";
+    const dniTitularDeLaCuenta: string = "20202020";
+    const numeroDeCuenta: string = banco.crearCuenta(
+      titularDeLaCuenta,
+      dniTitularDeLaCuenta,
+    );
+    const saldo: number = banco.consultarSaldo(numeroDeCuenta);
+    expect(saldo).toBe(0);
+  });
 });
