@@ -24,11 +24,11 @@
 
 # Convenciones (trabajo en equipo)
 
-## .editConfig
-         ## identificación, fin de línea,etc
+## editConfig
+          identificación, fin de línea,etc
 ## Linters
     Leen nuestro codigo y verifican reglas en nuestro código
-casting
+     casting
 
 
 # Ruby
@@ -52,7 +52,11 @@ class Foo
  def metodo1(parametro1, parametro2)
    puts "Dentro de metodo_1: parametro1 = #{parametro1}, parametro2 = #{parametro2}"
  end
- 
+ ~~~
+
+# Typescript
+
+
  
  
  
