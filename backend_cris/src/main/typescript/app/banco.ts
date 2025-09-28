@@ -1,11 +1,17 @@
 export default class Banco {
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   crearCuenta(titularDeLaCuenta: string, dniTitularDeLaCuenta: string): string {
-    return "0123456789";
+    const numeroDeCuenta: string = "0123456789";
+    const cuenta: Cuenta = new Cuenta(
+      numeroDeCuenta,
+      titularDeLaCuenta,
+      dniTitularDeLaCuenta,
+    );
+    return cuenta.obtenerNumeroDeCuenta();
   }
-
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  consultarSaldo(numeroDeCuenta: string) {
-    return 0;
+  consultarSaldo(numeroDeCuenta: string): number {
+    return this.cuenta.getSaldo();
+  }
+  acreditarMonto(montoAAcreditar: number) {
+    this.cuenta.acreditar(montoAAcreditar);
   }
 }
