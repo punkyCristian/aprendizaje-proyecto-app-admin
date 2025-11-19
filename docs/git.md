@@ -18,6 +18,19 @@ git branch java-patrones
 
 git branch data-science
 
+Ver ramas locales
+
+git branch
+
+  data-science
+* docs-metas
+  java-app
+  java-core
+  java-estructuras
+  java-patrones
+  main
+
+
 
 
 Trabaja en ramas específicas:
